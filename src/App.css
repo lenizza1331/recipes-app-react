@@ -87,7 +87,7 @@ h1 {
     .recipe__image {
         border-radius: 5px;
         background-color: #fff;
-        padding: 6px;
-        max-width: 98vw;
+        padding: 8px;
+        max-width: 90vw;
     }
 }
