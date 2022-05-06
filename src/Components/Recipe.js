@@ -10,11 +10,11 @@ return(
             <p>Cuisine: {cuisine}</p>
             <h5>{calories.toFixed()} kCal</h5>
         </div>
-        <img src={image} className='recipe__image'/>
+        <img src={image} className='recipe__image' alt="image of food"/>
         <ul>
             {ingredients.map(ingredient => (
                 <li className="recipe__list">
-                    <img src={fork}/>
+                    <img src={fork} alt="icon"/>
                     {ingredient}
                 </li>
             ))}
