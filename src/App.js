@@ -2,6 +2,7 @@ import './App.css';
 import { useEffect, useState } from 'react';
 import video from './Assets/food.mp4';
 import Recipe from './Components/Recipe';
+import ScrollButton from './Components/ScrollButton';
 
 
 
@@ -70,6 +71,8 @@ function App() {
       ))}
     </div>
     </div>
+
+    <ScrollButton/>
 
 
     </div>
