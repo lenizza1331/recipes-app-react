@@ -36,7 +36,6 @@ h1 {
     margin-left: 0px;
     box-shadow: inset 0px 0px 0px 4px #ddd6e8;
     border-radius: 10px;
-    color: rgba(222, 240, 26, 0.5);
 }
 .search:focus{
     background-color: #fff;
