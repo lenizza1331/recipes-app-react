@@ -1,6 +1,6 @@
 import fork from "../Assets/fork.png"
 
-function Recipe ({label, calories, image, ingredients, cuisine, mealType}) {
+function Recipe ({label, calories, image, ingredients, cuisine, mealType, time, weight}) {
     
 return(
     <div className="recipe eachRec">
@@ -8,9 +8,11 @@ return(
         <div className="recipe__about">
             <p>Type: {mealType}</p>
             <p>Cuisine: {cuisine}</p>
+            <p>Total time: {time} minutes</p>
+            <p>Total weight: {weight.toFixed()} g</p>
             <h5>{calories.toFixed()} kCal</h5>
         </div>
-        <img src={image} className='recipe__image' alt="image of food"/>
+        <img src={image} className='recipe__image' alt="food"/>
         <ul>
             {ingredients.map(ingredient => (
                 <li className="recipe__list">

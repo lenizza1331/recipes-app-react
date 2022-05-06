@@ -24,6 +24,7 @@ function App() {
     async function fetchData() {
     const response = await fetch(`https://api.edamam.com/search?q=${submitSearch}&app_id=${API_ID}&app_key=${API_KEY}`);
     const data = await response.json();
+    console.log(data.hits);
     
     setMyRecipes(data.hits);
       }
@@ -63,6 +64,8 @@ function App() {
             ingredients={elem.recipe.ingredientLines}
             cuisine={elem.recipe.cuisineType}
             mealType={elem.recipe.dishType}
+            time={elem.recipe.totalTime}
+            weight={elem.recipe.totalWeight}
             />
       ))}
     </div>
