@@ -84,4 +84,10 @@ h1 {
     .eachRec {
         width: 95vw;
     }
+    .recipe__image {
+        border-radius: 5px;
+        background-color: #fff;
+        padding: 6px;
+        max-width: 98vw;
+    }
 }
